@@ -1,0 +1,124 @@
+.goal-card {
+      background: white;
+        border-radius: 16px;
+          padding: 20px;
+            margin-bottom: 16px;
+              box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                transition: all 0.2s;
+                }
+
+                .goal-card:hover {
+                  transform: translateY(-2px);
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                    }
+
+                    .goal-header {
+                      display: flex;
+                        justify-content: space-between;
+                          align-items: flex-start;
+                            margin-bottom: 8px;
+                              gap: 12px;
+                              }
+
+                              .goal-title {
+                                font-size: 17px;
+                                  font-weight: 600;
+                                    color: #1C1C1E;
+                                      margin: 0;
+                                        flex: 1;
+                                        }
+
+                                        .goal-status-badge {
+                                          padding: 4px 12px;
+                                            border-radius: 12px;
+                                              font-size: 12px;
+                                                font-weight: 600;
+                                                  white-space: nowrap;
+                                                  }
+
+                                                  .goal-description {
+                                                    font-size: 15px;
+                                                      color: #8E8E93;
+                                                        margin: 0 0 16px 0;
+                                                        }
+
+                                                        .goal-progress-section {
+                                                          margin-bottom: 16px;
+                                                          }
+
+                                                          .progress-header {
+                                                            display: flex;
+                                                              justify-content: space-between;
+                                                                align-items: center;
+                                                                  margin-bottom: 8px;
+                                                                  }
+
+                                                                  .progress-label {
+                                                                    font-size: 14px;
+                                                                      color: #8E8E93;
+                                                                      }
+
+                                                                      .progress-percent {
+                                                                        font-size: 15px;
+                                                                          font-weight: 600;
+                                                                            color: #1C1C1E;
+                                                                            }
+
+                                                                            .progress-bar {
+                                                                              height: 8px;
+                                                                                background: #F2F2F7;
+                                                                                  border-radius: 4px;
+                                                                                    overflow: hidden;
+                                                                                    }
+
+                                                                                    .progress-fill {
+                                                                                      height: 100%;
+                                                                                        transition: width 0.3s ease;
+                                                                                          border-radius: 4px;
+                                                                                          }
+
+                                                                                          .goal-footer {
+                                                                                            display: flex;
+                                                                                              justify-content: space-between;
+                                                                                                align-items: center;
+                                                                                                }
+
+                                                                                                .goal-owner {
+                                                                                                  display: flex;
+                                                                                                    align-items: center;
+                                                                                                      gap: 8px;
+                                                                                                      }
+
+                                                                                                      .owner-avatar {
+                                                                                                        width: 32px;
+                                                                                                          height: 32px;
+                                                                                                            border-radius: 50%;
+                                                                                                              display: flex;
+                                                                                                                align-items: center;
+                                                                                                                  justify-content: center;
+                                                                                                                    color: white;
+                                                                                                                      font-size: 13px;
+                                                                                                                        font-weight: 600;
+                                                                                                                        }
+
+                                                                                                                        .owner-name {
+                                                                                                                          font-size: 14px;
+                                                                                                                            color: #1C1C1E;
+                                                                                                                              font-weight: 500;
+                                                                                                                              }
+
+                                                                                                                              .goal-date {
+                                                                                                                                display: flex;
+                                                                                                                                  align-items: center;
+                                                                                                                                    gap: 6px;
+                                                                                                                                    }
+
+                                                                                                                                    .date-icon {
+                                                                                                                                      font-size: 16px;
+                                                                                                                                      }
+
+                                                                                                                                      .date-text {
+                                                                                                                                        font-size: 14px;
+                                                                                                                                          color: #8E8E93;
+                                                                                                                                          }
+}

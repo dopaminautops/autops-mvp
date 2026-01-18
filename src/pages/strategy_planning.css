@@ -1,0 +1,211 @@
+.strategy-planning-page {
+      min-height: 100vh;
+        background-color: #F2F2F7;
+          padding-bottom: 40px;
+          }
+
+          .strategy-content {
+            max-width: 600px;
+              margin: 0 auto;
+                padding: 20px 16px;
+                }
+
+                /* Stats Grid */
+                .stats-grid {
+                  display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                      gap: 12px;
+                        margin-bottom: 24px;
+                        }
+
+                        .stat-card {
+                          background: white;
+                            border-radius: 16px;
+                              padding: 20px 16px;
+                                display: flex;
+                                  flex-direction: column;
+                                    gap: 8px;
+                                      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                      }
+
+                                      .stat-card.blue {
+                                        background: linear-gradient(135deg, #E3EEFF 0%, #D4E4FF 100%);
+                                        }
+
+                                        .stat-card.green {
+                                          background: linear-gradient(135deg, #E8F5E9 0%, #D4EDD6 100%);
+                                          }
+
+                                          .stat-card.orange {
+                                            background: linear-gradient(135deg, #FFF3E0 0%, #FFE8CC 100%);
+                                            }
+
+                                            .stat-label {
+                                              font-size: 13px;
+                                                color: #8E8E93;
+                                                  font-weight: 500;
+                                                  }
+
+                                                  .stat-value {
+                                                    font-size: 32px;
+                                                      font-weight: 700;
+                                                        color: #1C1C1E;
+                                                        }
+
+                                                        /* Goals Section */
+                                                        .goals-section {
+                                                          margin-bottom: 32px;
+                                                          }
+
+                                                          .goals-section h2 {
+                                                            font-size: 22px;
+                                                              font-weight: 600;
+                                                                color: #1C1C1E;
+                                                                  margin-bottom: 16px;
+                                                                  }
+
+                                                                  .goals-list {
+                                                                    display: flex;
+                                                                      flex-direction: column;
+                                                                      }
+
+                                                                      /* Forecast Section */
+                                                                      .forecast-section {
+                                                                        margin-bottom: 32px;
+                                                                        }
+
+                                                                        .forecast-card {
+                                                                          background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
+                                                                            border-radius: 16px;
+                                                                              padding: 20px;
+                                                                                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                                                                }
+                                                                                .forecast-header {
+                                                                                    display: flex;
+                                                                                      align-items: center;
+                                                                                        gap: 12px;
+                                                                                          margin-bottom: 12px;
+                                                                                          }
+
+                                                                                          .forecast-icon {
+                                                                                            font-size: 24px;
+                                                                                            }
+
+                                                                                            .forecast-header h3 {
+                                                                                              font-size: 18px;
+                                                                                                font-weight: 600;
+                                                                                                  color: #6A1B9A;
+                                                                                                    margin: 0;
+                                                                                                    }
+
+                                                                                                    .forecast-text {
+                                                                                                      font-size: 15px;
+                                                                                                        color: #4A148C;
+                                                                                                          line-height: 1.5;
+                                                                                                            margin: 0 0 16px 0;
+                                                                                                            }
+
+                                                                                                            .probability-row {
+                                                                                                              display: flex;
+                                                                                                                align-items: center;
+                                                                                                                  gap: 8px;
+                                                                                                                    padding: 12px;
+                                                                                                                      background: rgba(255, 255, 255, 0.5);
+                                                                                                                        border-radius: 12px;
+                                                                                                                        }
+
+                                                                                                                        .probability-icon {
+                                                                                                                          font-size: 18px;
+                                                                                                                          }
+
+                                                                                                                          .probability-label {
+                                                                                                                            flex: 1;
+                                                                                                                              font-size: 14px;
+                                                                                                                                color: #6A1B9A;
+                                                                                                                                  font-weight: 500;
+                                                                                                                                  }
+
+                                                                                                                                  .probability-value {
+                                                                                                                                    font-size: 20px;
+                                                                                                                                      font-weight: 700;
+                                                                                                                                        color: #4A148C;
+                                                                                                                                        }
+
+                                                                                                                                        /* Reviews Section */
+                                                                                                                                        .reviews-section {
+                                                                                                                                          margin-bottom: 32px;
+                                                                                                                                          }
+
+                                                                                                                                          .reviews-section h2 {
+                                                                                                                                            font-size: 22px;
+                                                                                                                                              font-weight: 600;
+                                                                                                                                                color: #1C1C1E;
+                                                                                                                                                  margin-bottom: 16px;
+                                                                                                                                                  }
+
+                                                                                                                                                  .reviews-grid {
+                                                                                                                                                    display: grid;
+                                                                                                                                                      grid-template-columns: repeat(3, 1fr);
+                                                                                                                                                        gap: 12px;
+                                                                                                                                                        }
+
+                                                                                                                                                        .review-card {
+                                                                                                                                                          background: white;
+                                                                                                                                                            border-radius: 12px;
+                                                                                                                                                              padding: 16px;
+                                                                                                                                                                text-align: center;
+                                                                                                                                                                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                                                                                                                                                  }
+
+                                                                                                                                                                  .review-date {
+                                                                                                                                                                    font-size: 16px;
+                                                                                                                                                                      font-weight: 600;
+                                                                                                                                                                        color: #1C1C1E;
+                                                                                                                                                                          margin-bottom: 4px;
+                                                                                                                                                                          }
+
+                                                                                                                                                                          .review-count {
+                                                                                                                                                                            font-size: 13px;
+                                                                                                                                                                              color: #8E8E93;
+                                                                                                                                                                              }
+
+                                                                                                                                                                              /* Export Report Button */
+                                                                                                                                                                              .export-report-btn {
+                                                                                                                                                                                width: 100%;
+                                                                                                                                                                                  padding: 16px;
+                                                                                                                                                                                    background: #007AFF;
+                                                                                                                                                                                      border: none;
+                                                                                                                                                                                        color: white;
+                                                                                                                                                                                          border-radius: 12px;
+                                                                                                                                                                                            font-size: 16px;
+                                                                                                                                                                                              font-weight: 600;
+                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                  display: flex;
+                                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                                      justify-content: center;
+                                                                                                                                                                                                        gap: 8px;
+                                                                                                                                                                                                          transition: all 0.2s;
+                                                                                                                                                                                                            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .export-report-btn:hover {
+                                                                                                                                                                                                              background: #0051D5;
+                                                                                                                                                                                                                transform: translateY(-2px);
+                                                                                                                                                                                                                  box-shadow: 0 6px 16px rgba(0, 122, 255, 0.4);
+                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                  .export-icon {
+                                                                                                                                                                                                                    font-size: 20px;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                    /* Loading */
+                                                                                                                                                                                                                    .loading {
+                                                                                                                                                                                                                      display: flex;
+                                                                                                                                                                                                                        justify-content: center;
+                                                                                                                                                                                                                          align-items: center;
+                                                                                                                                                                                                                            height: 100vh;
+                                                                                                                                                                                                                              font-size: 16px;
+                                                                                                                                                                                                                                color: #666;
+                                                                                                                                                                                                                                }
+                                                                                }
+}

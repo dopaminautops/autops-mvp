@@ -1,0 +1,368 @@
+.call-automation-page {
+      min-height: 100vh;
+        background-color: #f5f5f5;
+          padding-bottom: 100px;
+          }
+
+          .call-automation-content {
+            max-width: 600px;
+              margin: 0 auto;
+                padding: 16px;
+                }
+
+                /* Hub Status */
+                .hub-status {
+                  display: flex;
+                    align-items: center;
+                      gap: 8px;
+                        padding: 12px 16px;
+                          background: #E8F5E9;
+                            border-radius: 12px;
+                              margin-bottom: 16px;
+                              }
+
+                              .status-indicator {
+                                width: 10px;
+                                  height: 10px;
+                                    border-radius: 50%;
+                                      background: #4CAF50;
+                                      }
+
+                                      .status-indicator.active {
+                                        animation: pulse 2s infinite;
+                                        }
+
+                                        @keyframes pulse {
+                                          0%, 100% { opacity: 1; }
+                                            50% { opacity: 0.5; }
+                                            }
+
+                                            .hub-status span {
+                                              font-size: 14px;
+                                                font-weight: 600;
+                                                  color: #2E7D32;
+                                                  }
+
+                                                  /* Tab Navigation */
+                                                  .tab-navigation {
+                                                    display: flex;
+                                                      gap: 8px;
+                                                        overflow-x: auto;
+                                                          padding-bottom: 4px;
+                                                            margin-bottom: 24px;
+                                                              scrollbar-width: none;
+                                                              }
+
+                                                              .tab-navigation::-webkit-scrollbar {
+                                                                display: none;
+                                                                }
+
+                                                                .tab {
+                                                                  padding: 10px 16px;
+                                                                    border: none;
+                                                                      background: white;
+                                                                        border-radius: 20px;
+                                                                          font-size: 14px;
+                                                                            font-weight: 500;
+                                                                              color: #666;
+                                                                                cursor: pointer;
+                                                                                  white-space: nowrap;
+                                                                                    transition: all 0.2s;
+                                                                                      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                                                                                      }
+
+                                                                                      .tab.active {
+                                                                                        background: #5B7FFF;
+                                                                                          color: white;
+                                                                                            box-shadow: 0 4px 8px rgba(91, 127, 255, 0.3);
+                                                                                            }
+
+                                                                                            .tab:hover {
+                                                                                              transform: translateY(-2px);
+                                                                                                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                                                                                                }
+
+                                                                                                /* Call Recording Section */
+                                                                                                .call-recording-section {
+                                                                                                  background: white;
+                                                                                                    border-radius: 16px;
+                                                                                                      padding: 24px;
+                                                                                                        margin-bottom: 24px;
+                                                                                                          box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                                                                                          }
+
+                                                                                                          .call-recording-section h3 {
+                                                                                                            font-size: 18px;
+                                                                                                              font-weight: 600;
+                                                                                                                color: #333;
+                                                                                                                  margin: 0 0 8px 0;
+                                                                                                                  }
+
+                                                                                                                  .section-subtitle {
+                                                                                                                    font-size: 14px;
+                                                                                                                      color: #666;
+                                                                                                                        margin: 0 0 20px 0;
+                                                                                                                        }
+
+                                                                                                                        .start-recording-btn {
+                                                                                                                          width: 100%;
+                                                                                                                            padding: 16px;
+                                                                                                                              background: #5B7FFF;
+                                                                                                                                color: white;
+                                                                                                                                  border: none;
+                                                                                                                                    border-radius: 12px;
+                                                                                                                                      font-size: 16px;
+                                                                                                                                        font-weight: 600;
+                                                                                                                                          cursor: pointer;
+                                                                                                                                            transition: all 0.2s;
+                                                                                                                                              box-shadow: 0 4px 12px rgba(91, 127, 255, 0.3);
+                                                                                                                                              }
+
+                                                                                                                                              .start-recording-btn:hover {
+                                                                                                                                                background: #4a6fe6;
+                                                                                                                                                  transform: translateY(-2px);
+                                                                                                                                                    box-shadow: 0 6px 16px rgba(91, 127, 255, 0.4);
+                                                                                                                                                    }
+
+                                                                                                                                                    /* Recent Calls Section */
+                                                                                                                                                    .recent-calls-section {
+                                                                                                                                                      margin-bottom: 24px;
+                                                                                                                                                      }
+
+                                                                                                                                                      .recent-calls-section h3 {
+                                                                                                                                                        font-size: 16px;
+                                                                                                                                                          font-weight: 600;
+                                                                                                                                                            color: #333;
+                                                                                                                                                              margin-bottom: 16px;
+                                                                                                                                                              }
+
+                                                                                                                                                              .no-calls {
+                                                                                                                                                                background: white;
+                                                                                                                                                                  border-radius: 16px;
+                                                                                                                                                                    padding: 40px 20px;
+                                                                                                                                                                      text-align: center;
+                                                                                                                                                                        color: #999;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        /* Error Message */
+                                                                                                                                                                        .error-message {
+                                                                                                                                                                          background: #FFEBEE;
+                                                                                                                                                                            border-radius: 12px;
+                                                                                                                                                                              padding: 20px;
+                                                                                                                                                                                text-align: center;
+                                                                                                                                                                                  color: #C62828;
+                                                                                                                                                                                    margin-bottom: 16px;
+                                                                                                                                                                                    }
+
+                                                                                                                                                                                    .error-message button {
+                                                                                                                                                                                      margin-top: 12px;
+                                                                                                                                                                                        padding: 8px 24px;
+                                                                                                                                                                                          background: #C62828;
+                                                                                                                                                                                            color: white;
+                                                                                                                                                                                              border: none;
+                                                                                                                                                                                                border-radius: 8px;
+                                                                                                                                                                                                  cursor: pointer;
+                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                  /* Tabs Content */
+                                                                                                                                                                                                  .calls-tab,
+                                                                                                                                                                                                  .transcriptions-tab,
+                                                                                                                                                                                                  .bookings-tab,
+                                                                                                                                                                                                  .messaging-tab,
+                                                                                                                                                                                                  .reminders-tab {
+                                                                                                                                                                                                    animation: fadeIn 0.3s;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    @keyframes fadeIn {
+                                                                                                                                                                                                      from { opacity: 0; transform: translateY(10px); }
+                                                                                                                                                                                                        to { opacity: 1; transform: translateY(0); }
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .calls-tab h2,
+                                                                                                                                                                                                        .transcriptions-tab h2,
+                                                                                                                                                                                                        .bookings-tab h2,
+                                                                                                                                                                                                        .messaging-tab h2,
+                                                                                                                                                                                                        .reminders-tab h2 {
+                                                                                                                                                                                                          font-size: 20px;
+                                                                                                                                                                                                            font-weight: 600;
+                                                                                                                                                                                                              color: #333;
+                                                                                                                                                                                                                margin-bottom: 8px;
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                .subtitle {
+                                                                                                                                                                                                                  font-size: 14px;
+                                                                                                                                                                                                                    color: #666;
+                                                                                                                                                                                                                      margin-bottom: 24px;
+                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                      /* Message Templates */
+                                                                                                                                                                                                                      .message-templates {
+                                                                                                                                                                                                                        display: grid;
+                                                                                                                                                                                                                          gap: 16px;
+                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                          .template-card {
+                                                                                                                                                                                                                            background: white;
+                                                                                                                                                                                                                              border-radius: 16px;
+                                                                                                                                                                                                                                padding: 20px;
+                                                                                                                                                                                                                                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                  .template-card h4 {
+                                                                                                                                                                                                                                    font-size: 16px;
+                                                                                                                                                                                                                                      font-weight: 600;
+                                                                                                                                                                                                                                        color: #333;
+                                                                                                                                                                                                                                          margin: 0 0 8px 0;
+                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                          .template-card p {
+                                                                                                                                                                                                                                            font-size: 14px;
+                                                                                                                                                                                                                                              color: #666;
+                                                                                                                                                                                                                                                margin: 0 0 16px 0;
+                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                .preview-btn {
+                                                                                                                                                                                                                                                  padding: 10px 20px;
+                                                                                                                                                                                                                                                    background: #5B7FFF;
+                                                                                                                                                                                                                                                      color: white;
+                                                                                                                                                                                                                                                        border: none;
+                                                                                                                                                                                                                                                          border-radius: 8px;
+                                                                                                                                                                                                                                                            font-size: 14px;
+                                                                                                                                                                                                                                                              font-weight: 600;
+                                                                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                                                                  transition: all 0.2s;
+                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                  .preview-btn:hover {
+                                                                                                                                                                                                                                                                    background: #4a6fe6;
+                                                                                                                                                                                                                                                                      transform: translateY(-2px);
+                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                      /* Reminder Stats */
+                                                                                                                                                                                                                                                                      .reminder-stats {
+                                                                                                                                                                                                                                                                        display: grid;
+                                                                                                                                                                                                                                                                          grid-template-columns: repeat(3, 1fr);
+                                                                                                                                                                                                                                                                            gap: 12px;
+                                                                                                                                                                                                                                                                              margin-bottom: 24px;
+                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                              .stat-box {
+                                                                                                                                                                                                                                                                                background: white;
+                                                                                                                                                                                                                                                                                  border-radius: 12px;
+                                                                                                                                                                                                                                                                                    padding: 20px;
+                                                                                                                                                                                                                                                                                      text-align: center;
+                                                                                                                                                                                                                                                                                        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                        .stat-number {
+                                                                                                                                                                                                                                                                                          font-size: 32px;
+                                                                                                                                                                                                                                                                                            font-weight: 700;
+                                                                                                                                                                                                                                                                                              color: #333;
+                                                                                                                                                                                                                                                                                                margin-bottom: 4px;
+                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                .stat-label {
+                                                                                                                                                                                                                                                                                                  font-size: 12px;
+                                                                                                                                                                                                                                                                                                    color: #666;
+                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                    /* Reminder Config */
+                                                                                                                                                                                                                                                                                                    .reminder-config {
+                                                                                                                                                                                                                                                                                                      display: grid;
+                                                                                                                                                                                                                                                                                                        gap: 12px;
+                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                        .reminder-item {
+                                                                                                                                                                                                                                                                                                          background: white;
+                                                                                                                                                                                                                                                                                                            border-radius: 16px;
+                                                                                                                                                                                                                                                                                                              padding: 20px;
+                                                                                                                                                                                                                                                                                                                display: flex;
+                                                                                                                                                                                                                                                                                                                  align-items: center;
+                                                                                                                                                                                                                                                                                                                    gap: 16px;
+                                                                                                                                                                                                                                                                                                                      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                      .reminder-icon {
+                                                                                                                                                                                                                                                                                                                        font-size: 32px;
+                                                                                                                                                                                                                                                                                                                          width: 48px;
+                                                                                                                                                                                                                                                                                                                            height: 48px;
+                                                                                                                                                                                                                                                                                                                              display: flex;
+                                                                                                                                                                                                                                                                                                                                align-items: center;
+                                                                                                                                                                                                                                                                                                                                  justify-content: center;
+                                                                                                                                                                                                                                                                                                                                    background: #F5F5F5;
+                                                                                                                                                                                                                                                                                                                                      border-radius: 12px;
+                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                      .reminder-info {
+                                                                                                                                                                                                                                                                                                                                        flex: 1;
+                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                        .reminder-info h4 {
+                                                                                                                                                                                                                                                                                                                                          font-size: 16px;
+                                                                                                                                                                                                                                                                                                                                            font-weight: 600;
+                                                                                                                                                                                                                                                                                                                                              color: #333;
+                                                                                                                                                                                                                                                                                                                                                margin: 0 0 4px 0;
+                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                .reminder-info p {
+                                                                                                                                                                                                                                                                                                                                                  font-size: 14px;
+                                                                                                                                                                                                                                                                                                                                                    color: #666;
+                                                                                                                                                                                                                                                                                                                                                      margin: 0;
+                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                      /* Toggle Switch */
+                                                                                                                                                                                                                                                                                                                                                      .toggle-switch {
+                                                                                                                                                                                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                                                                                                                                                                                          display: inline-block;
+                                                                                                                                                                                                                                                                                                                                                            width: 50px;
+                                                                                                                                                                                                                                                                                                                                                              height: 28px;
+                                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                                              .toggle-switch input {
+                                                                                                                                                                                                                                                                                                                                                                opacity: 0;
+                                                                                                                                                                                                                                                                                                                                                                  width: 0;
+                                                                                                                                                                                                                                                                                                                                                                    height: 0;
+                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                    .slider {
+                                                                                                                                                                                                                                                                                                                                                                      position: absolute;
+                                                                                                                                                                                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                                                                                                                                                                                          top: 0;
+                                                                                                                                                                                                                                                                                                                                                                            left: 0;
+                                                                                                                                                                                                                                                                                                                                                                              right: 0;
+                                                                                                                                                                                                                                                                                                                                                                                bottom: 0;
+                                                                                                                                                                                                                                                                                                                                                                                  background-color: #ccc;
+                                                                                                                                                                                                                                                                                                                                                                                    transition: .4s;
+                                                                                                                                                                                                                                                                                                                                                                                      border-radius: 28px;
+                                                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                                                      .slider:before {
+                                                                                                                                                                                                                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                                                                                                                                                                                                                          content: "";
+                                                                                                                                                                                                                                                                                                                                                                                            height: 20px;
+                                                                                                                                                                                                                                                                                                                                                                                              width: 20px;
+                                                                                                                                                                                                                                                                                                                                                                                                left: 4px;
+                                                                                                                                                                                                                                                                                                                                                                                                  bottom: 4px;
+                                                                                                                                                                                                                                                                                                                                                                                                    background-color: white;
+                                                                                                                                                                                                                                                                                                                                                                                                      transition: .4s;
+                                                                                                                                                                                                                                                                                                                                                                                                        border-radius: 50%;
+                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                        input:checked + .slider {
+                                                                                                                                                                                                                                                                                                                                                                                                          background-color: #4CAF50;
+                                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                                          input:checked + .slider:before {
+                                                                                                                                                                                                                                                                                                                                                                                                            transform: translateX(22px);
+                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                            /* Loading */
+                                                                                                                                                                                                                                                                                                                                                                                                            .loading {
+                                                                                                                                                                                                                                                                                                                                                                                                              display: flex;
+                                                                                                                                                                                                                                                                                                                                                                                                                justify-content: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                  align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                    padding: 60px 20px;
+                                                                                                                                                                                                                                                                                                                                                                                                                      font-size: 16px;
+                                                                                                                                                                                                                                                                                                                                                                                                                        color: #666;
+                                                                                                                                                                                                                                                                                                                                                                                                                        }
+}

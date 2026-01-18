@@ -1,0 +1,49 @@
+.activity-item {
+      display: flex;
+        align-items: flex-start;
+          gap: 12px;
+            padding: 12px 0;
+              border-bottom: 1px solid #F0F0F0;
+              }
+
+              .activity-item:last-child {
+                border-bottom: none;
+                  padding-bottom: 0;
+                  }
+
+                  .activity-item:first-child {
+                    padding-top: 0;
+                    }
+
+                    .activity-icon-circle {
+                      width: 40px;
+                        height: 40px;
+                          border-radius: 50%;
+                            display: flex;
+                              align-items: center;
+                                justify-content: center;
+                                  flex-shrink: 0;
+                                  }
+
+                                  .activity-icon {
+                                    font-size: 20px;
+                                    }
+
+                                    .activity-content {
+                                      flex: 1;
+                                      }
+
+                                      .activity-title {
+                                        font-size: 15px;
+                                          font-weight: 500;
+                                            color: #333;
+                                              margin: 0 0 4px 0;
+                                                line-height: 1.4;
+                                                }
+
+                                                .activity-time {
+                                                  font-size: 13px;
+                                                    color: #999;
+                                                      margin: 0;
+                                                      }
+}

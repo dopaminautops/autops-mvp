@@ -1,0 +1,72 @@
+/* src/components/FinanceCard.css */
+
+.finance-card {
+  background: #ffffff;
+    border-radius: 8px;
+      padding: 1.25rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+          border: 1px solid #eaeaea;
+            transition: all 0.2s ease;
+            }
+
+            .finance-card:hover {
+              transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                }
+
+                .finance-period {
+                  font-size: 1.125rem;
+                    font-weight: 600;
+                      color: #1e293b;
+                        margin: 0 0 1rem 0;
+                        }
+
+                        .finance-metrics {
+                          display: flex;
+                            flex-direction: column;
+                              gap: 0.75rem;
+                              }
+
+                              .metric {
+                                display: flex;
+                                  justify-content: space-between;
+                                    padding-bottom: 0.5rem;
+                                      border-bottom: 1px dashed #f1f5f9;
+                                      }
+
+                                      .metric:last-child {
+                                        border-bottom: none;
+                                          padding-bottom: 0;
+                                          }
+
+                                          .metric-label {
+                                            font-size: 0.875rem;
+                                              color: #64748b;
+                                                font-weight: 500;
+                                                }
+
+                                                .metric-value {
+                                                  font-size: 1rem;
+                                                    font-weight: 600;
+                                                    }
+
+                                                    .revenue {
+                                                      color: #0d9488; /* teal-600 — matches your likely success tone */
+                                                      }
+
+                                                      .expenses {
+                                                        color: #dc2626; /* red-600 — consistent with warnings/errors */
+                                                        }
+
+                                                        .profit.positive {
+                                                          color: #059669; /* green-600 — strong positive */
+                                                          }
+
+                                                          .profit.negative {
+                                                            color: #dc2626; /* red-600 — clear loss signal */
+                                                            }
+
+                                                            .total .metric-label,
+                                                            .total .metric-value {
+                                                              font-weight: 700;
+                                                              }

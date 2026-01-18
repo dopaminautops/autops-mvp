@@ -1,0 +1,22 @@
+/* src/pages/DatePickerOverride.css */
+
+.date-range-picker {
+  display: flex;
+    gap: 0.5rem;
+      margin: 1rem 0 1.5rem;
+        align-items: center;
+        }
+
+        .date-input {
+          padding: 0.5rem 1rem;
+            border-radius: 6px;
+              border: 1px solid #e2e8f0;
+                font-size: 0.875rem;
+                  background: white;
+                    min-width: 140px;
+                    }
+
+                    .date-separator {
+                      color: #64748b;
+                        font-weight: 500;
+                        }

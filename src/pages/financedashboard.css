@@ -1,0 +1,137 @@
+.finance-dashboard {
+      padding: 2rem;
+        background-color: #f9fafb;
+          min-height: 100vh;
+          }
+
+          .finance-title {
+            font-size: 2rem;
+              font-weight: bold;
+                color: #1f2937;
+                  margin-bottom: 1.5rem;
+                  }
+
+                  .finance-cards {
+                    display: grid;
+                      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        gap: 1.5rem;
+                          margin-bottom: 2rem;
+                          }
+
+                          .finance-card {
+                            background: white;
+                              border-radius: 0.5rem;
+                                padding: 1.5rem;
+                                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                    border: 1px solid #e5e7eb;
+                                    }
+
+                                    .card-period {
+                                      font-size: 1.25rem;
+                                        font-weight: 600;
+                                          color: #374151;
+                                            margin-bottom: 1rem;
+                                            }
+
+                                            .card-metrics {
+                                              display: flex;
+                                                flex-direction: column;
+                                                  gap: 0.5rem;
+                                                  }
+
+                                                  .metric {
+                                                    display: flex;
+                                                      justify-content: space-between;
+                                                        padding: 0.5rem 0;
+                                                          border-bottom: 1px solid #e5e7eb;
+                                                          }
+
+                                                          .metric:last-child {
+                                                            border-bottom: none;
+                                                            }
+
+                                                            .metric-label {
+                                                              color: #6b7280;
+                                                                font-weight: 500;
+                                                                }
+
+                                                                .metric-value {
+                                                                  font-weight: 600;
+                                                                  }
+
+                                                                  .metric-green {
+                                                                    color: #10b981;
+                                                                    }
+
+                                                                    .metric-red {
+                                                                      color: #ef4444;
+                                                                      }
+
+                                                                      .total .metric-label {
+                                                                        font-weight: 700;
+                                                                        }
+
+                                                                        .total .metric-value {
+                                                                          font-weight: 700;
+                                                                          }
+
+                                                                          .finance-table-container {
+                                                                            background: white;
+                                                                              border-radius: 0.5rem;
+                                                                                padding: 1.5rem;
+                                                                                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                                                    border: 1px solid #e5e7eb;
+                                                                                    }
+
+                                                                                    .table-title {
+                                                                                      font-size: 1.25rem;
+                                                                                        font-weight: 600;
+                                                                                          color: #374151;
+                                                                                            margin-bottom: 1rem;
+                                                                                            }
+
+                                                                                            .finance-table {
+                                                                                              width: 100%;
+                                                                                                border-collapse: collapse;
+                                                                                                }
+
+                                                                                                .finance-table th,
+                                                                                                .finance-table td {
+                                                                                                  padding: 0.75rem;
+                                                                                                    text-align: left;
+                                                                                                      border-bottom: 1px solid #e5e7eb;
+                                                                                                      }
+
+                                                                                                      .finance-table th {
+                                                                                                        background-color: #f3f4f6;
+                                                                                                          font-weight: 600;
+                                                                                                            color: #374151;
+                                                                                                            }
+
+                                                                                                            .finance-table tr:hover {
+                                                                                                              background-color: #f9fafb;
+                                                                                                              }
+
+                                                                                                              .profit-positive {
+                                                                                                                color: #10b981;
+                                                                                                                  font-weight: 600;
+                                                                                                                  }
+
+                                                                                                                  .profit-negative {
+                                                                                                                    color: #ef4444;
+                                                                                                                      font-weight: 600;
+                                                                                                                      }
+
+                                                                                                                      .finance-loading,
+                                                                                                                      .finance-error {
+                                                                                                                        padding: 2rem;
+                                                                                                                          text-align: center;
+                                                                                                                            font-size: 1.25rem;
+                                                                                                                              color: #6b7280;
+                                                                                                                              }
+
+                                                                                                                              .finance-error {
+                                                                                                                                color: #ef4444;
+                                                                                                                                }
+                                                                                                                                ```
+}

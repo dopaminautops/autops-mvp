@@ -1,0 +1,245 @@
+/* frontend/src/pages/TeamManagementPage.css */
+
+.team-management-page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: 16px;
+      background-color: #f9fafb;
+        min-height: 100vh;
+        }
+
+        .page-header {
+          margin-bottom: 20px;
+          }
+
+          .page-header h1 {
+            font-size: 24px;
+              font-weight: 600;
+                color: #111827;
+                }
+
+                .search-actions {
+                  display: flex;
+                    gap: 16px;
+                      margin-bottom: 20px;
+                        align-items: center;
+                        }
+
+                        .search-box {
+                          flex: 1;
+                          }
+
+                          .search-input {
+                            width: 100%;
+                              padding: 12px;
+                                border: 1px solid #d1d5db;
+                                  border-radius: 8px;
+                                    font-size: 14px;
+                                      outline: none;
+                                      }
+
+                                      .action-buttons {
+                                        display: flex;
+                                          gap: 8px;
+                                          }
+
+                                          .add-btn {
+                                            background: #2563eb;
+                                              color: white;
+                                                border: none;
+                                                  padding: 12px 20px;
+                                                    border-radius: 8px;
+                                                      font-size: 14px;
+                                                        cursor: pointer;
+                                                        }
+
+                                                        .invite-btn {
+                                                          background: white;
+                                                            color: #2563eb;
+                                                              border: 1px solid #2563eb;
+                                                                padding: 12px 20px;
+                                                                  border-radius: 8px;
+                                                                    font-size: 14px;
+                                                                      cursor: pointer;
+                                                                      }
+
+                                                                      .department-filters {
+                                                                        display: flex;
+                                                                          gap: 8px;
+                                                                            margin-bottom: 20px;
+                                                                              flex-wrap: wrap;
+                                                                              }
+
+                                                                              .filter-btn {
+                                                                                background: #f3f4f6;
+                                                                                  color: #6b7280;
+                                                                                    border: none;
+                                                                                      padding: 8px 16px;
+                                                                                        border-radius: 20px;
+                                                                                          font-size: 14px;
+                                                                                            cursor: pointer;
+                                                                                            }
+
+                                                                                            .filter-btn.active {
+                                                                                              background: #dbeafe;
+                                                                                                color: #2563eb;
+                                                                                                  border: 1px solid #2563eb;
+                                                                                                  }
+
+                                                                                                  .team-list {
+                                                                                                    display: flex;
+                                                                                                      flex-direction: column;
+                                                                                                        gap: 16px;
+                                                                                                        }
+
+                                                                                                        .team-member-card {
+                                                                                                          background: white;
+                                                                                                            padding: 16px;
+                                                                                                              border-radius: 12px;
+                                                                                                                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                                                                                                                  display: flex;
+                                                                                                                    align-items: center;
+                                                                                                                      gap: 16px;
+                                                                                                                      }
+/* ADD THESE TO THE BOTTOM OF TeamManagementPage.css */
+
+.permissions-section {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.permissions-section strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.permissions-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.permission-badge {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.delegation-section {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.delegation-item {
+  margin: 4px 0;
+}
+
+.delegation-item.none {
+  color: #9ca3af;
+  font-style: italic;
+}
+                                                                                                                      .avatar {
+                                                                                                                        width: 50px;
+                                                                                                                          height: 50px;
+                                                                                                                            border-radius: 50%;
+                                                                                                                              object-fit: cover;
+                                                                                                                              }
+
+                                                                                                                              .member-info {
+                                                                                                                                flex: 1;
+                                                                                                                                }
+
+                                                                                                                                .member-info h3 {
+                                                                                                                                  font-size: 16px;
+                                                                                                                                    margin: 0 0 4px 0;
+                                                                                                                                      color: #111827;
+                                                                                                                                      }
+
+                                                                                                                                      .email {
+                                                                                                                                        font-size: 14px;
+                                                                                                                                          color: #6b7280;
+                                                                                                                                            margin: 0;
+                                                                                                                                            }
+
+                                                                                                                                            .tags {
+                                                                                                                                              display: flex;
+                                                                                                                                                gap: 8px;
+                                                                                                                                                  margin-top: 8px;
+                                                                                                                                                  }
+
+                                                                                                                                                  .role {
+                                                                                                                                                    padding: 4px 8px;
+                                                                                                                                                      border-radius: 12px;
+                                                                                                                                                        font-size: 12px;
+                                                                                                                                                          font-weight: 500;
+                                                                                                                                                            text-transform: capitalize;
+                                                                                                                                                            }
+
+                                                                                                                                                            .role.admin {
+                                                                                                                                                              background-color: #fef3c7;
+                                                                                                                                                                color: #f59e0b;
+                                                                                                                                                                }
+
+                                                                                                                                                                .role.manager {
+                                                                                                                                                                  background-color: #d1fae5;
+                                                                                                                                                                    color: #10b981;
+                                                                                                                                                                    }
+
+                                                                                                                                                                    .role.member {
+                                                                                                                                                                      background-color: #f3f4f6;
+                                                                                                                                                                        color: #6b7280;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        .status {
+                                                                                                                                                                          padding: 4px 8px;
+                                                                                                                                                                            border-radius: 12px;
+                                                                                                                                                                              font-size: 12px;
+                                                                                                                                                                                font-weight: 500;
+                                                                                                                                                                                  display: flex;
+                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                      gap: 4px;
+                                                                                                                                                                                      }
+
+                                                                                                                                                                                      .status.active {
+                                                                                                                                                                                        background-color: #d1fae5;
+                                                                                                                                                                                          color: #10b981;
+                                                                                                                                                                                          }
+
+                                                                                                                                                                                          .status.inactive {
+                                                                                                                                                                                            background-color: #f3f4f6;
+                                                                                                                                                                                              color: #6b7280;
+                                                                                                                                                                                              }
+
+                                                                                                                                                                                              .dot {
+                                                                                                                                                                                                width: 8px;
+                                                                                                                                                                                                  height: 8px;
+                                                                                                                                                                                                    border-radius: 50%;
+                                                                                                                                                                                                      background-color: currentColor;
+                                                                                                                                                                                                        display: inline-block;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .actions {
+                                                                                                                                                                                                          display: flex;
+                                                                                                                                                                                                            gap: 8px;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .edit-btn, .delete-btn {
+                                                                                                                                                                                                              background: none;
+                                                                                                                                                                                                                border: none;
+                                                                                                                                                                                                                  font-size: 18px;
+                                                                                                                                                                                                                    cursor: pointer;
+                                                                                                                                                                                                                      color: #6b7280;
+                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                      .edit-btn:hover {
+                                                                                                                                                                                                                        color: #2563eb;
+                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                        .delete-btn:hover {
+                                                                                                                                                                                                                          color: #dc2626;
+                                                                                                                                                                                                                          }

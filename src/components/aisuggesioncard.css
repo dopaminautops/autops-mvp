@@ -1,0 +1,42 @@
+.ai-suggestion-card {
+      background: linear-gradient(135deg, #5B7FFF 0%, #4a6fe6 100%);
+        border-radius: 20px;
+          padding: 24px;
+            min-width: 280px;
+              max-width: 320px;
+                color: white;
+                  box-shadow: 0 8px 20px rgba(91, 127, 255, 0.3);
+                    flex-shrink: 0;
+                    }
+
+                    .suggestion-icon {
+                      font-size: 40px;
+                        margin-bottom: 16px;
+                        }
+
+                        .suggestion-description {
+                          font-size: 16px;
+                            line-height: 1.5;
+                              margin: 0 0 20px 0;
+                                font-weight: 500;
+                                }
+
+                                .try-now-btn {
+                                  background: rgba(255, 255, 255, 0.2);
+                                    color: white;
+                                      border: 2px solid white;
+                                        padding: 12px 28px;
+                                          border-radius: 12px;
+                                            font-size: 15px;
+                                              font-weight: 600;
+                                                cursor: pointer;
+                                                  transition: all 0.2s;
+                                                    width: auto;
+                                                    }
+
+                                                    .try-now-btn:hover {
+                                                      background: white;
+                                                        color: #5B7FFF;
+                                                          transform: translateY(-2px);
+                                                          }
+}

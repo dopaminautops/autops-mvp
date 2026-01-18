@@ -1,0 +1,52 @@
+.client-records-page {
+      padding: 16px;
+        background-color: #f9fafb;
+          min-height: 100vh;
+          }
+
+          .client-records-page h1 {
+            font-size: 24px;
+              font-weight: 700;
+                margin-bottom: 16px;
+                  color: #1f2937;
+                  }
+
+                  .search-bar input {
+                    width: 100%;
+                      padding: 12px;
+                        border: 1px solid #d1d5db;
+                          border-radius: 8px;
+                            margin-bottom: 16px;
+                              font-size: 16px;
+                              }
+
+                              .loading {
+                                text-align: center;
+                                  padding: 32px;
+                                    color: #6b7280;
+                                    }
+
+                                    .client-list {
+                                      margin-bottom: 24px;
+                                      }
+
+                                      .page-actions {
+                                        display: flex;
+                                          gap: 12px;
+                                            margin-top: 16px;
+                                            }
+
+                                            .page-actions button {
+                                              padding: 10px 16px;
+                                                border: 1px solid #d1d5db;
+                                                  background: white;
+                                                    border-radius: 6px;
+                                                      font-size: 14px;
+                                                        cursor: pointer;
+                                                          transition: background 0.2s;
+                                                          }
+
+                                                          .page-actions button:hover {
+                                                            background: #f3f4f6;
+                                                            }
+}

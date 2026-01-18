@@ -1,0 +1,325 @@
+.id-configuration-page {
+      min-height: 100vh;
+        background-color: #f5f5f5;
+          padding-bottom: 40px;
+          }
+
+          .id-config-header {
+            display: flex;
+              align-items: center;
+                justify-content: space-between;
+                  padding: 16px;
+                    background: white;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                        position: sticky;
+                          top: 0;
+                            z-index: 100;
+                            }
+
+                            .back-btn {
+                              background: none;
+                                border: none;
+                                  font-size: 28px;
+                                    color: #007AFF;
+                                      cursor: pointer;
+                                        padding: 0;
+                                          width: 40px;
+                                            height: 40px;
+                                              display: flex;
+                                                align-items: center;
+                                                  justify-content: center;
+                                                  }
+
+                                                  .id-config-header h1 {
+                                                    font-size: 18px;
+                                                      font-weight: 600;
+                                                        color: #333;
+                                                          margin: 0;
+                                                          }
+
+                                                          .save-btn {
+                                                            background: none;
+                                                              border: none;
+                                                                color: #007AFF;
+                                                                  font-size: 16px;
+                                                                    font-weight: 600;
+                                                                      cursor: pointer;
+                                                                        padding: 8px 12px;
+                                                                        }
+
+                                                                        .save-btn:disabled {
+                                                                          opacity: 0.5;
+                                                                          }
+
+                                                                          .id-config-content {
+                                                                            max-width: 600px;
+                                                                              margin: 0 auto;
+                                                                                padding: 20px 16px;
+                                                                                }
+
+                                                                                /* Section Styles */
+                                                                                .config-section {
+                                                                                  margin-bottom: 32px;
+                                                                                  }
+
+                                                                                  .section-title {
+                                                                                    font-size: 13px;
+                                                                                      font-weight: 600;
+                                                                                        color: #8E8E93;
+                                                                                          letter-spacing: 0.5px;
+                                                                                            margin-bottom: 12px;
+                                                                                              text-transform: uppercase;
+                                                                                              }
+
+                                                                                              .section-description {
+                                                                                                font-size: 14px;
+                                                                                                  color: #666;
+                                                                                                    margin-bottom: 16px;
+                                                                                                      line-height: 1.5;
+                                                                                                      }
+
+                                                                                                      .config-card {
+                                                                                                        background: white;
+                                                                                                          border-radius: 12px;
+                                                                                                            padding: 16px;
+                                                                                                              box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                                                                                                              }
+
+                                                                                                              /* Config Select */
+                                                                                                              .config-label {
+                                                                                                                display: block;
+                                                                                                                  font-size: 14px;
+                                                                                                                    color: #666;
+                                                                                                                      margin-bottom: 8px;
+                                                                                                                      }
+
+                                                                                                                      .config-select {
+                                                                                                                        width: 100%;
+                                                                                                                          padding: 12px;
+                                                                                                                            border: 1px solid #E5E5EA;
+                                                                                                                              border-radius: 8px;
+                                                                                                                                font-size: 15px;
+                                                                                                                                  background: #F8F9FA;
+                                                                                                                                    margin-bottom: 16px;
+                                                                                                                                    }
+
+                                                                                                                                    /* License Status */
+                                                                                                                                    .license-status {
+                                                                                                                                      display: flex;
+                                                                                                                                        align-items: center;
+                                                                                                                                          gap: 8px;
+                                                                                                                                            padding: 12px;
+                                                                                                                                              background: #E8F5E9;
+                                                                                                                                                border-radius: 8px;
+                                                                                                                                                }
+
+                                                                                                                                                .status-icon {
+                                                                                                                                                  color: #4CAF50;
+                                                                                                                                                    font-size: 18px;
+                                                                                                                                                    }
+
+                                                                                                                                                    .status-text {
+                                                                                                                                                      flex: 1;
+                                                                                                                                                        font-size: 14px;
+                                                                                                                                                          color: #2E7D32;
+                                                                                                                                                            font-weight: 500;
+                                                                                                                                                            }
+
+                                                                                                                                                            .edit-key-btn {
+                                                                                                                                                              padding: 6px 16px;
+                                                                                                                                                                background: none;
+                                                                                                                                                                  border: 1px solid #4CAF50;
+                                                                                                                                                                    color: #4CAF50;
+                                                                                                                                                                      border-radius: 6px;
+                                                                                                                                                                        font-size: 13px;
+                                                                                                                                                                          font-weight: 600;
+                                                                                                                                                                            cursor: pointer;
+                                                                                                                                                                            }
+
+                                                                                                                                                                            /* Field Mapping */
+                                                                                                                                                                            .field-mapping {
+                                                                                                                                                                              display: flex;
+                                                                                                                                                                                align-items: center;
+                                                                                                                                                                                  gap: 12px;
+                                                                                                                                                                                    padding: 16px 0;
+                                                                                                                                                                                      border-bottom: 1px solid #F0F0F0;
+                                                                                                                                                                                      }
+
+                                                                                                                                                                                      .field-mapping:last-child {
+                                                                                                                                                                                        border-bottom: none;
+                                                                                                                                                                                          padding-bottom: 0;
+                                                                                                                                                                                          }
+
+                                                                                                                                                                                          .field-mapping:first-child {
+                                                                                                                                                                                            padding-top: 0;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            .field-icon {
+                                                                                                                                                                                              width: 40px;
+                                                                                                                                                                                                height: 40px;
+                                                                                                                                                                                                  background: #F0F3FF;
+                                                                                                                                                                                                    border-radius: 10px;
+                                                                                                                                                                                                      display: flex;
+                                                                                                                                                                                                        align-items: center;
+                                                                                                                                                                                                          justify-content: center;
+                                                                                                                                                                                                            font-size: 20px;
+                                                                                                                                                                                                              flex-shrink: 0;
+                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                              .field-info {
+                                                                                                                                                                                                                flex: 1;
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                .field-info label {
+                                                                                                                                                                                                                  display: block;
+                                                                                                                                                                                                                    font-size: 15px;
+                                                                                                                                                                                                                      font-weight: 500;
+                                                                                                                                                                                                                        color: #333;
+                                                                                                                                                                                                                          margin-bottom: 8px;
+                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                          .mapping-select {
+                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                              padding: 10px;
+                                                                                                                                                                                                                                border: 1px solid #E5E5EA;
+                                                                                                                                                                                                                                  border-radius: 8px;
+                                                                                                                                                                                                                                    font-size: 14px;
+                                                                                                                                                                                                                                      background: #F8F9FA;
+                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                      /* Toggle Item */
+                                                                                                                                                                                                                                      .toggle-item {
+                                                                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                                                                          align-items: center;
+                                                                                                                                                                                                                                            justify-content: space-between;
+                                                                                                                                                                                                                                              padding: 16px 0;
+                                                                                                                                                                                                                                                border-bottom: 1px solid #F0F0F0;
+                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                .toggle-item:last-child {
+                                                                                                                                                                                                                                                  border-bottom: none;
+                                                                                                                                                                                                                                                    padding-bottom: 0;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    .toggle-item:first-child {
+                                                                                                                                                                                                                                                      padding-top: 0;
+                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                      .toggle-info h4 {
+                                                                                                                                                                                                                                                        font-size: 15px;
+                                                                                                                                                                                                                                                          font-weight: 500;
+                                                                                                                                                                                                                                                            color: #333;
+                                                                                                                                                                                                                                                              margin: 0 0 4px 0;
+                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                              .toggle-info p {
+                                                                                                                                                                                                                                                                font-size: 13px;
+                                                                                                                                                                                                                                                                  color: #666;
+                                                                                                                                                                                                                                                                    margin: 0;
+                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                    /* Toggle Switch */
+                                                                                                                                                                                                                                                                    .toggle-switch {
+                                                                                                                                                                                                                                                                      position: relative;
+                                                                                                                                                                                                                                                                        display: inline-block;
+                                                                                                                                                                                                                                                                          width: 51px;
+                                                                                                                                                                                                                                                                            height: 31px;
+                                                                                                                                                                                                                                                                              flex-shrink: 0;
+                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                              .toggle-switch input {
+                                                                                                                                                                                                                                                                                opacity: 0;
+                                                                                                                                                                                                                                                                                  width: 0;
+                                                                                                                                                                                                                                                                                    height: 0;
+                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                    .toggle-slider {
+                                                                                                                                                                                                                                                                                      position: absolute;
+                                                                                                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                                                                                                          top: 0;
+                                                                                                                                                                                                                                                                                            left: 0;
+                                                                                                                                                                                                                                                                                              right: 0;
+                                                                                                                                                                                                                                                                                                bottom: 0;
+                                                                                                                                                                                                                                                                                                  background-color: #E5E5EA;
+                                                                                                                                                                                                                                                                                                    transition: .4s;
+                                                                                                                                                                                                                                                                                                      border-radius: 31px;
+                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                      .toggle-slider:before {
+                                                                                                                                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                                                                                                                                          content: "";
+                                                                                                                                                                                                                                                                                                            height: 27px;
+                                                                                                                                                                                                                                                                                                              width: 27px;
+                                                                                                                                                                                                                                                                                                                left: 2px;
+                                                                                                                                                                                                                                                                                                                  bottom: 2px;
+                                                                                                                                                                                                                                                                                                                    background-color: white;
+                                                                                                                                                                                                                                                                                                                      transition: .4s;
+                                                                                                                                                                                                                                                                                                                        border-radius: 50%;
+                                                                                                                                                                                                                                                                                                                          box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                          input:checked + .toggle-slider {
+                                                                                                                                                                                                                                                                                                                            background-color: #34C759;
+                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                            input:checked + .toggle-slider:before {
+                                                                                                                                                                                                                                                                                                                              transform: translateX(20px);
+                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                              /* Enterprise Badge */
+                                                                                                                                                                                                                                                                                                                              .enterprise-badge {
+                                                                                                                                                                                                                                                                                                                                display: flex;
+                                                                                                                                                                                                                                                                                                                                  gap: 12px;
+                                                                                                                                                                                                                                                                                                                                    padding: 16px;
+                                                                                                                                                                                                                                                                                                                                      background: #E8F5E9;
+                                                                                                                                                                                                                                                                                                                                        border-radius: 12px;
+                                                                                                                                                                                                                                                                                                                                          margin-bottom: 20px;
+                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                          .badge-icon {
+                                                                                                                                                                                                                                                                                                                                            font-size: 24px;
+                                                                                                                                                                                                                                                                                                                                              flex-shrink: 0;
+                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                              .badge-content h4 {
+                                                                                                                                                                                                                                                                                                                                                font-size: 15px;
+                                                                                                                                                                                                                                                                                                                                                  font-weight: 600;
+                                                                                                                                                                                                                                                                                                                                                    color: #2E7D32;
+                                                                                                                                                                                                                                                                                                                                                      margin: 0 0 4px 0;
+                                                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                                                      .badge-content p {
+                                                                                                                                                                                                                                                                                                                                                        font-size: 13px;
+                                                                                                                                                                                                                                                                                                                                                          color: #388E3C;
+                                                                                                                                                                                                                                                                                                                                                            margin: 0;
+                                                                                                                                                                                                                                                                                                                                                              line-height: 1.5;
+                                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                                              /* Test Config Button */
+                                                                                                                                                                                                                                                                                                                                                              .test-config-btn {
+                                                                                                                                                                                                                                                                                                                                                                width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                  padding: 16px;
+                                                                                                                                                                                                                                                                                                                                                                    background: white;
+                                                                                                                                                                                                                                                                                                                                                                      border: 2px dashed #007AFF;
+                                                                                                                                                                                                                                                                                                                                                                        color: #007AFF;
+                                                                                                                                                                                                                                                                                                                                                                          border-radius: 12px;
+                                                                                                                                                                                                                                                                                                                                                                            font-size: 16px;
+                                                                                                                                                                                                                                                                                                                                                                              font-weight: 600;
+                                                                                                                                                                                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                                                                                                                                                                                  transition: all 0.2s;
+                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                  .test-config-btn:hover {
+                                                                                                                                                                                                                                                                                                                                                                                    background: #F0F3FF;
+                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                    /* Loading */
+                                                                                                                                                                                                                                                                                                                                                                                    .loading {
+                                                                                                                                                                                                                                                                                                                                                                                      display: flex;
+                                                                                                                                                                                                                                                                                                                                                                                        justify-content: center;
+                                                                                                                                                                                                                                                                                                                                                                                          align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                            height: 100vh;
+                                                                                                                                                                                                                                                                                                                                                                                              font-size: 16px;
+                                                                                                                                                                                                                                                                                                                                                                                                color: #666;
+                                                                                                                                                                                                                                                                                                                                                                                                }
+}

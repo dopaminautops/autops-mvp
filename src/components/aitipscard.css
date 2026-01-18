@@ -1,0 +1,47 @@
+/* src/components/AITip.css */
+
+.ai-tip {
+  display: flex;
+    align-items: flex-start;
+      gap: 0.75rem;
+        background: #f9f5ff;
+          border-radius: 8px;
+            padding: 1rem;
+              border-left: 4px solid #9333ea;
+              }
+
+              .ai-icon {
+                font-size: 1.25rem;
+                  color: #9333ea;
+                  }
+
+                  .ai-content {
+                    flex: 1;
+                    }
+
+                    .ai-title {
+                      font-size: 1rem;
+                        font-weight: 600;
+                          color: #9333ea;
+                            margin: 0 0 0.5rem 0;
+                            }
+
+                            .ai-text {
+                              font-size: 0.875rem;
+                                color: #475569;
+                                  margin: 0 0 0.5rem 0;
+                                  }
+
+                                  .ai-link {
+                                    font-size: 0.875rem;
+                                      color: #9333ea;
+                                        background: none;
+                                          border: none;
+                                            padding: 0;
+                                              text-decoration: underline;
+                                                cursor: pointer;
+                                                }
+
+                                                .ai-link:hover {
+                                                  text-decoration: none;
+                                                  }
