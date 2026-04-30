@@ -1,0 +1,8 @@
+body { margin: 0; font-family: Inter, sans-serif; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; height: 100vh; }
+.chat, .preview { padding: 16px; }
+.messages { height: calc(100vh - 180px); overflow: auto; background: #f8fafc; padding: 12px; border-radius: 8px; }
+form { display: flex; gap: 8px; margin-top: 12px; }
+input { flex: 1; padding: 10px; }
+button { padding: 10px 16px; }
+.graph { height: calc(100vh - 120px); border: 1px solid #e2e8f0; border-radius: 8px; }

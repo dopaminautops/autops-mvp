@@ -1,85 +1,63 @@
 import { useState } from 'react'
-import './DrawerMenu.css'
+import './drawermenu.css'
 
-function DrawerMenu({ currentPage, onNavigate }) {
+function DrawerMenu({ currentPage, menuItems, onNavigate }) {
   const [isOpen, setIsOpen] = useState(false)
+  const groupedItems = menuItems.reduce((acc, item) => {
+    const key = item.category || 'Menu'
+    if (!acc[key]) acc[key] = []
+    acc[key].push(item)
+    return acc
+  }, {})
 
-    const menuItems = [
-        { id: 'automation-hub', icon: '🏠', label: 'Automation Hub' },
-            { id: 'call-automation', icon: '📞', label: 'Call Automation' },
-                { id: 'operations', icon: '📊', label: 'Operations' },
-                    { id: 'strategy-planning', icon: '🎯', label: 'Strategy & Planning' },
-                        { id: 'templates', icon: '📋', label: 'Templates' },
-                            { id: 'id-config', icon: '🆔', label: 'ID Configuration' },
-                                { id: 'workflow-setup', icon: '⚙️', label: 'Workflow Setup' },
-                                    { id: 'configure-step', icon: '📝', label: 'Configure Step' },
-                                        { id: 'onboarding-flow', icon: '🔄', label: 'Onboarding Flow' },
-                                          ]
+  const handleItemClick = (pageId) => {
+    onNavigate(pageId)
+    setIsOpen(false)
+  }
 
-                                            const handleItemClick = (pageId) => {
-                                                onNavigate(pageId)
-                                                    setIsOpen(false)
-                                                      }
+  return (
+    <>
+      <button
+        className="drawer-menu-btn"
+        onClick={() => setIsOpen((open) => !open)}
+        aria-label="Open menu"
+        type="button"
+      >
+        ☰
+      </button>
 
-                                                        return (
-                                                            <>
-                                                                  {/* Menu Button */}
-                                                                        <button 
-                                                                                className="drawer-menu-btn" 
-                                                                                        onClick={() => setIsOpen(!isOpen)}
-                                                                                                aria-label="Open menu"
-                                                                                                      >
-                                                                                                              ☰
-                                                                                                                    </button>
+      {isOpen && <div className="drawer-overlay" onClick={() => setIsOpen(false)} aria-hidden="true" />}
 
-                                                                                                                          {/* Overlay */}
-                                                                                                                                {isOpen && (
-                                                                                                                                        <div 
-                                                                                                                                                  className="drawer-overlay" 
-                                                                                                                                                            onClick={() => setIsOpen(false)}
-                                                                                                                                                                    ></div>
-                                                                                                                                                                          )}
+      <aside className={`drawer ${isOpen ? 'open' : ''}`} aria-label="Navigation drawer">
+        <div className="drawer-header">
+          <h2>Menu</h2>
+          <button className="drawer-close-btn" onClick={() => setIsOpen(false)} type="button" aria-label="Close menu">
+            ✕
+          </button>
+        </div>
 
-                                                                                                                                                                                {/* Drawer */}
-                                                                                                                                                                                      <div className={`drawer ${isOpen ? 'open' : ''}`}>
-                                                                                                                                                                                              <div className="drawer-header">
-                                                                                                                                                                                                        <h2>Menu</h2>
-                                                                                                                                                                                                                  <button 
-                                                                                                                                                                                                                              className="drawer-close-btn" 
-                                                                                                                                                                                                                                          onClick={() => setIsOpen(false)}
-                                                                                                                                                                                                                                                    >
-                                                                                                                                                                                                                                                                ✕
-                                                                                                                                                                                                                                                                          </button>
-                                                                                                                                                                                                                                                                                  </div>
+        <nav className="drawer-nav">
+          {Object.entries(groupedItems).map(([category, items]) => (
+            <div key={category} className="drawer-category">
+              <p className="drawer-category-label">{category}</p>
+              {items.map((item) => (
+                <button
+                  key={item.id}
+                  className={`drawer-item ${currentPage === item.id ? 'active' : ''}`}
+                  onClick={() => handleItemClick(item.id)}
+                  type="button"
+                >
+                  <span className="drawer-item-icon">{item.icon}</span>
+                  <span className="drawer-item-label">{item.label}</span>
+                  {currentPage === item.id ? <span className="drawer-item-indicator" /> : null}
+                </button>
+              ))}
+            </div>
+          ))}
+        </nav>
+      </aside>
+    </>
+  )
+}
 
-                                                                                                                                                                                                                                                                                          <nav className="drawer-nav">
-                                                                                                                                                                                                                                                                                                    {menuItems.map(item => (
-                                                                                                                                                                                                                                                                                                                <button
-                                                                                                                                                                                                                                                                                                                              key={item.id}
-                                                                                                                                                                                                                                                                                                                                            className={`drawer-item ${currentPage === item.id ? 'active' : ''}`}
-                                                                                                                                                                                                                                                                                                                                                          onClick={() => handleItemClick(item.id)}
-                                                                                                                                                                                                                                                                                                                                                                      >
-                                                                                                                                                                                                                                                                                                                                                                                    <span className="drawer-item-icon">{item.icon}</span>
-                                                                                                                                                                                                                                                                                                                                                                                                  <span className="drawer-item-label">{item.label}</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                {currentPage === item.id && (
-                                                                                                                                                                                                                                                                                                                                                                                                                                <span className="drawer-item-indicator"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                              )}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                          </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ))}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </nav>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div className="drawer-footer">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div className="user-info">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div className="user-avatar">D</div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <div className="user-details">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span className="user-name">Darmiyaan</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <span className="user-email">admin@company.com</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            export default DrawerMenu
+export default DrawerMenu
